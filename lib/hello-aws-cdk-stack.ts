@@ -17,6 +17,11 @@ export class HelloAwsCdkStack extends cdk.Stack {
       handler: 'hello.handler', // 関数コードを含む特定のファイルの名前。
     });
 
+    new cdk.CfnOutput(this, 'HelloWorldFunctionName', {
+      value: helloWorldFunction.functionName,
+      description: 'JavaScript Lambda function'
+    });
+
     // Define the API Gateway resource
     const api = new apigateway.LambdaRestApi(this, 'HelloWorldApi', {
       handler: helloWorldFunction,
