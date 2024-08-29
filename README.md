@@ -30,7 +30,7 @@ https://www.letitride.jp/entry/2020/06/12/202624
 - AWS CDK L2 コンストラクト
   - AWS Cloud Development Kit (CDK)で使用される中間レベルの抽象化を提供するコンポーネントのこと
 - Stack
-  - cdk が特定の用途に必要とするすべてのリソースが含まれる
+  - cdk が特定の用途に必要とするすべてのリソースのこと。 AWS CloudFormationによっていまとめて管理されるAWSリソースコレクションのこと。
 - constructor のidはcfnでデプロイするときに自動生成されるid
 - 新しいリソースを追加したい時
   - https://docs.aws.amazon.com/cdk/api/v2/docs/aws-construct-library.html
